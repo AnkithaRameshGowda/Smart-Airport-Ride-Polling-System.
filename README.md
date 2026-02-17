@@ -76,7 +76,7 @@ O(n) per request (n = active pools)
 
 ## Dynamic Pricing Formula
 ```
-final_price =(base_rate × distance) × demand_multiplier × (1 - sharing_discount) + luggage_fee
+(final_price =(base_rate × distance) × demand_multiplier × (1 - sharing_discount) + luggage_fee )
 ```
 
 ## Performance Considerations
@@ -118,5 +118,6 @@ uvicorn app.main:app --reload
 http://127.0.0.1:8000/docs
 
 ```
+
 
 
