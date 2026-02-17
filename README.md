@@ -75,9 +75,9 @@ O(n) per request (n = active pools)
     Ensures no seat overbooking
 
 ## Dynamic Pricing Formula
-$$
-final__price =(base__rate × distance) × demand__multiplier × (1 - sharing__discount) + luggage__fee
-$$
+```
+final_price =(base_rate × distance) × demand_multiplier × (1 - sharing_discount) + luggage_fee
+```
 
 ## Performance Considerations
     Async FastAPI
@@ -118,4 +118,5 @@ uvicorn app.main:app --reload
 http://127.0.0.1:8000/docs
 
 ```
+
 
