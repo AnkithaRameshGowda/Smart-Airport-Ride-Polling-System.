@@ -52,10 +52,15 @@ Client → FastAPI → Matching Engine → Pricing Engine → PostgreSQL
 ## Matching Algorithm
 
 For each incoming passenger:
+
     1.Fetch ACTIVE ride pools (with row lock)
+    
     2.Validate seat and luggage capacity
+    
     3.Calculate deviation using Haversine formula
+    
     4.Select pool with minimum deviation
+    
     5.If no valid pool, create new pool
 
 Time Complexity:
@@ -109,4 +114,5 @@ uvicorn app.main:app --reload
 
 ```browser
 http://127.0.0.1:8000/docs
+
 ```
